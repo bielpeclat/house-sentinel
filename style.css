@@ -185,7 +185,7 @@ body.dark .nav-links li a:hover .link-name {
   padding-top: 10px;
   border-top: 1px solid var(--border-color);
   position: relative;
-  top: -15px; /* Move 10px para cima */
+  top: -40px; /* Move 10px para cima */
 }
 
 .menu-items .mode {
