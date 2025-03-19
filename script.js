@@ -1,4 +1,4 @@
-// Configuração do Firebase (copie isso do seu Firebase Console)
+// Configuração do Firebase
 const firebaseConfig = {
   apiKey: "AIzaSyDPf6nIAhImKHYACYV0llFnPq-NUwGt5yg",
   authDomain: "house-sentinel-grok.firebaseapp.com",
