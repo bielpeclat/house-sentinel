@@ -1,0 +1,21 @@
+{
+    "short_name": "HouseSentinel",
+    "name": "House Sentinel - Monitoramento Residencial",
+    "description": "Aplicativo para monitorar temperatura, umidade e alertas residenciais.",
+    "icons": [
+      {
+        "src": "images/icon-192x192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "images/icon-512x512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#0E4BF1",
+    "theme_color": "#0E4BF1"
+  }
