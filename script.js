@@ -19,6 +19,7 @@ const database = firebase.database();
 // Selecionar elementos do HTML onde os dados serão exibidos
 const tempElement = document.querySelector(".box1 .number"); // Para temperatura
 const humidityElement = document.querySelector(".box2 .number"); // Para umidade
+const currentElement = document.querySelector(".box3 .number"); // Para corrente elétrica (estado)
 
 // Função para atualizar os dados no dashboard
 function updateDashboard() {
@@ -27,11 +28,13 @@ function updateDashboard() {
     const data = snapshot.val();
     if (data) {
       // Atualizar os valores no HTML
-      tempElement.textContent = data.temperature || "N/A"; // Exibe temperatura ou "N/A" se não houver dado
-      humidityElement.textContent = data.humidity || "N/A"; // Exibe umidade ou "N/A" se não houver dado
+      tempElement.textContent = data.temperature || "N/A"; // Exibe temperatura ou "N/A"
+      humidityElement.textContent = data.humidity || "N/A"; // Exibe umidade ou "N/A"
+      currentElement.textContent = (data.state === 1) ? "Sim" : (data.state === 0) ? "Não" : "N/A"; // Exibe "Sim", "Não" ou "N/A"
     } else {
       tempElement.textContent = "N/A";
       humidityElement.textContent = "N/A";
+      currentElement.textContent = "N/A";
     }
   });
 }
